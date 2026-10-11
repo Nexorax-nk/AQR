@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - env | grep -E '^(GROQ_API_KEY|AQR_|AWS_|NEXT_PUBLIC_)' >> .env.production || true
         - npm ci --cache .npm --prefer-offline
     build:
       commands:
