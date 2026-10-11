@@ -73,7 +73,7 @@ export async function GET() {
     status: 'ONLINE',
     configured: isConfigured,
     region: AWS_CONFIG.region || 'us-east-1',
-    credentialsDetected: Boolean(process.env.AWS_ACCESS_KEY_ID),
+    credentialsDetected: isConfigured,
     resourceArn: 'arn:aws:amplify:us-east-1:937370810634:apps/aqr-environmental',
     iamRole: 'arn:aws:iam::937370810634:user/Naveenkumar07',
     latencyMs: Math.max(t1 - t0, 18),

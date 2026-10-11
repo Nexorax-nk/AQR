@@ -1,8 +1,12 @@
+const accessKeyId = process.env.AQR_AWS_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID;
+const secretAccessKey = process.env.AQR_AWS_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY;
+const region = process.env.AQR_AWS_REGION || process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || 'us-east-1';
+
 export const AWS_CONFIG = {
-  region: process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || 'us-east-1',
-  credentials: process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY ? {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region,
+  credentials: accessKeyId && secretAccessKey ? {
+    accessKeyId,
+    secretAccessKey,
   } : undefined,
   tables: {
     telemetry: process.env.DYNAMODB_TABLE_TELEMETRY || 'AQR_AgentTelemetry',
@@ -24,7 +28,8 @@ export const AWS_CONFIG = {
 };
 
 export function isAwsConfigured(): boolean {
-  return Boolean(process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY);
+  return Boolean((process.env.AQR_AWS_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID) && 
+                 (process.env.AQR_AWS_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY));
 }
 
 export function getAwsClientConfig() {
@@ -34,3 +39,4 @@ export function getAwsClientConfig() {
     maxAttempts: 1,
   };
 }
+
