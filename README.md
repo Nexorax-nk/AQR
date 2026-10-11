@@ -1,36 +1,29 @@
-<div align="center">
-  <a href="https://main.d3skvsdpcgn6ks.amplifyapp.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/Nexorax-nk/AQR/main/public/air-quality.png" width="130" alt="AQR Logo" />
-  </a>
-  <h1>AQR</h1>
-  <p><b>Air Quality Routing — Autonomous Multi-Agent Clean Navigation Platform</b></p>
-  <p><i>Built for the <b>WeMakeDevs × AWS Bharat Builds Tour (Event 02 — Environmental Hacks)</b></i></p>
-  <p><b>🏆 Track 01: Air (Pollution, Exposure & AQI Extremes)</b></p>
-</div>
+<a href="https://main.d3skvsdpcgn6ks.amplifyapp.com" target="_blank">
+  <img src="https://raw.githubusercontent.com/Nexorax-nk/AQR/main/public/air-quality.png" width="95" align="left" alt="AQR Logo" />
+</a>
 
-<p align="center">
+# AQR &nbsp;•&nbsp; Air Quality Routing
+### Autonomous Multi-Agent Clean Navigation & Hazard Prevention Platform
+
+<p>
+  <i>Built for the <b>WeMakeDevs × AWS Bharat Builds Tour</b> (Event 02 — Environmental Hacks)</i><br />
+  <b>🏆 Track 01: Air (Pollution, Exposure & AQI Extremes)</b>
+</p>
+
+<br clear="left"/>
+
+<p>
   <img src="https://img.shields.io/badge/Status-Live%20on%20AWS-success?style=for-the-badge" alt="Status"/>
   <img src="https://img.shields.io/badge/Track-01%20Air%20Quality-00C7B7?style=for-the-badge" alt="Track"/>
   <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS"/>
   <img src="https://img.shields.io/badge/Amplify%20Hosting-FF9900?style=for-the-badge&logo=awsamplify&logoColor=white" alt="Amplify"/>
   <img src="https://img.shields.io/badge/Groq%20LPU-f55036?style=for-the-badge&logo=lightning&logoColor=white" alt="Groq"/>
-</p>
-
-<p align="center">
+  <br/>
   <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white" alt="DynamoDB"/>
   <img src="https://img.shields.io/badge/EventBridge-FF4F8B?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="EventBridge"/>
   <img src="https://img.shields.io/badge/Amazon%20SNS-BE185D?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="SNS"/>
   <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" alt="S3"/>
   <img src="https://img.shields.io/badge/CloudWatch-E7157B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white" alt="CloudWatch"/>
-</p>
-
-<p align="center">
-  <a href="https://main.d3skvsdpcgn6ks.amplifyapp.com" target="_blank"><b>🚀 Live Application</b></a> •
-  <a href="#-hackathon-track-alignment-track-01--air"><b>🎯 Track Alignment</b></a> •
-  <a href="#-high-level-technical-architecture"><b>⚙️ Architecture</b></a> •
-  <a href="#autonomous-multi-agent-swarm-mas"><b>🧠 Agent Swarm</b></a> •
-  <a href="#-how-we-built-on-aws-open-source--cloud-services"><b>☁️ AWS Services</b></a> •
-  <a href="#-how-aqr-excels-on-the-hackathon-judging-criteria"><b>🏆 Judging Criteria</b></a>
 </p>
 
 <br/>
